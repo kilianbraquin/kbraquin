@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="56px" viewBox="0 0 78 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CG Icon</title>
+    <defs>
+        <rect id="path-1" x="0" y="43.755814" width="74" height="9.24418605" rx="4.62209302"></rect>
+        <filter x="-4.7%" y="-27.0%" width="109.5%" height="175.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dark-Mode" transform="translate(-366.000000, -403.000000)">
+            <g id="CG-Icon" transform="translate(368.000000, 403.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#000000" stroke-width="1.20325203" stroke-linejoin="square" fill="#242124" fill-rule="evenodd" x="0.601626016" y="44.35744" width="72.796748" height="8.04093401" rx="4.02046701"></rect>
+                </g>
+                <path d="M54.1463415,0.601626016 C55.9738203,0.601626016 57.6282918,1.34235816 58.8258937,2.53996 C60.0234955,3.73756184 60.7642276,5.39203339 60.7642276,7.2195122 L60.7642276,36.3751182 L13.8373984,36.3751182 L13.8373984,7.2195122 C13.8373984,5.39203339 14.5781305,3.73756184 15.7757324,2.53996 C16.9733342,1.34235816 18.6278057,0.601626016 20.4552846,0.601626016 Z" id="Rectangle" stroke="#000000" stroke-width="1.20325203" fill="#242124"></path>
+                <path d="M37.300813,35.2775893 C45.2017003,35.2775893 53.0228391,35.6166576 60.7642277,36.2948321 L60.7642276,44.3867461 L13.8373984,44.3867461 L13.8373984,36.2948321 C21.578787,35.6166576 29.3999257,35.2775893 37.300813,35.2775893 Z" id="Rectangle" stroke="#000000" stroke-width="1.20325203" fill="#EB6635"></path>
+            </g>
+        </g>
+    </g>
+</svg>

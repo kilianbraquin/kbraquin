@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83.8203595px" height="59.6658583px" viewBox="0 0 83.8203595 59.6658583" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ESM Icon</title>
+    <defs>
+        <filter x="-9.5%" y="-13.3%" width="121.4%" height="131.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dark-Mode" transform="translate(-364.000000, -626.334142)" stroke="#DA3F41" stroke-width="3.00552525">
+            <g id="Group-2" transform="translate(368.000000, 630.000000)" filter="url(#filter-1)">
+                <g id="Group" transform="translate(67.875727, 6.278774) scale(-1, -1) translate(-67.875727, -6.278774) translate(61.751454, 0.000000)" stroke-linecap="round">
+                    <line x1="0.435930914" y1="12.0981767" x2="11.8126152" y2="0.459371927" id="Line-4"></line>
+                    <line x1="-2.01293114" y1="6.3714479" x2="14.2614772" y2="6.18610072" id="Line-4" transform="translate(6.124273, 6.278774) scale(-1, 1) rotate(-45.000000) translate(-6.124273, -6.278774) "></line>
+                </g>
+                <ellipse id="Oval" transform="translate(8.044531, 41.770122) scale(-1, -1) translate(-8.044531, -41.770122) " cx="8.0445306" cy="41.7701222" rx="6.54176798" ry="6.72711515"></ellipse>
+                <path d="M6.21175968,34.0931187 C35.088164,33.8932104 62.3675446,41.325849 56.0884122,5.36120943" id="Path-2" stroke-dasharray="6.011050553195839" transform="translate(31.604716, 19.980988) scale(-1, -1) translate(-31.604716, -19.980988) "></path>
+                <path d="M20.2117597,44.2972004 C49.088164,44.097292 72.510005,49.6656892 69.0343481,15.2111971" id="Path-2" stroke-dasharray="6.011050553195839"></path>
+            </g>
+        </g>
+    </g>
+</svg>
