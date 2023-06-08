@@ -5,6 +5,7 @@ import CGIcon from "@/icons/cg-icon.svg";
 import MTIcon from "@/icons/mt-icon.svg";
 import ESMIcon from "@/icons/esm-icon.svg";
 import IBSIcon from "@/icons/ib-saver-icon.svg";
+import SwiftIcon from "@/icons/swift-icon.svg";
 
 const dataProjects: ProjectCardProps[] = [
   {
@@ -13,6 +14,21 @@ const dataProjects: ProjectCardProps[] = [
     description:
       "A web application that allows to search tweets and easily download their media (images, videos).",
     href: "https://ibsaver.com",
+  },
+  {
+    image: <SwiftIcon />,
+    title: "Swift Todo",
+    description: (
+      <>
+        <span className="inline-block py-0.5 px-1 bg-primary/10 text-primary font-bold rounded-md mr-1">
+          Prototype
+        </span>
+        {
+          "A web application based on React and Framer Motion that lets you manage a simple to-do list."
+        }
+      </>
+    ),
+    href: "https://swift.kbraquin.com",
   },
   {
     image: <CGIcon />,
@@ -63,7 +79,7 @@ const HomePage: NextPage = () => {
       <h2 className="font-heading text-heading font-black mt-6 mb-4 text-3xl leading-none">
         Featured Projects
       </h2>
-      <ul className="mb-4 gap-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1">
+      <ul className="mb-4 md:mb-6 gap-3 grid grid-cols-1 md:grid-cols-1">
         {dataProjects.map((cardProps) => (
           <li key={cardProps.title}>
             <ProjectCard {...cardProps} />

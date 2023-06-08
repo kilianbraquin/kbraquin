@@ -5,7 +5,7 @@ export type ProjectCardProps = {
   image: ReactNode;
   title: string;
   href: string;
-  description: string;
+  description: ReactNode;
 };
 
 export const ProjectCard: FC<ProjectCardProps> = ({
@@ -17,15 +17,15 @@ export const ProjectCard: FC<ProjectCardProps> = ({
   return (
     <Link
       href={href}
-      className="h-full grid-cols-[auto_1fr] grid border-card-border border rounded-lg bg-card-bg p-4 gap-4 md:gap-x-6 md:gap-y-2 md:py-3"
+      className="h-full grid-cols-[auto_1fr] grid border-card-border border rounded-lg bg-card-bg p-4 gap-4 sm:gap-x-6 sm:gap-y-2 sm:py-3"
     >
-      <div className="md:row-span-2 md:self-center md:border-r-card-border">
+      <div className="sm:row-span-2 sm:self-center sm:border-r-card-border w-20 flex justify-center">
         {image}
       </div>
       <h3 className="text-heading font-black font-heading text-xl leading-none self-center">
         {title}
       </h3>
-      <p className="text-body col-span-2 md:col-span-1">{description}</p>
+      <p className="text-body col-span-2 sm:col-span-1">{description}</p>
     </Link>
   );
 };
