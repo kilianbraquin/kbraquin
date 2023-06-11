@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import { FC, PropsWithChildren } from "react";
 import { Metadata } from "next";
-import { Fathom } from "@/components/Fathom";
 
 export const metadata: Metadata = {
   title: "Kilian Braquin",
@@ -40,7 +39,6 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
         <link rel="stylesheet" href="https://use.typekit.net/nne1kqe.css" />
       </head>
       <body className="bg-side-bg">
-        <Fathom />
         <div className="container pt-4 pb-3 md:border-x-container-border border-x bg-main-bg min-h-screen flex flex-col">
           {children}
         </div>
