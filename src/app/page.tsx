@@ -13,7 +13,7 @@ const dataProjects: ProjectCardProps[] = [
     title: "IB Saver",
     description:
       "A web application that allows to search tweets and easily download their media (images, videos).",
-    href: "https://ibsaver.com",
+    href: "https://ibsaver.kbraquin.com",
   },
   {
     image: <SwiftIcon />,
