@@ -4,17 +4,9 @@ import Link from "next/link";
 import CGIcon from "@/icons/cg-icon.svg";
 import MTIcon from "@/icons/mt-icon.svg";
 import ESMIcon from "@/icons/esm-icon.svg";
-import IBSIcon from "@/icons/ib-saver-icon.svg";
 import SwiftIcon from "@/icons/swift-icon.svg";
 
 const dataProjects: ProjectCardProps[] = [
-  {
-    image: <IBSIcon />,
-    title: "IB Saver",
-    description:
-      "A web application that allows to search tweets and easily download their media (images, videos).",
-    href: "https://ibsaver.kbraquin.com",
-  },
   {
     image: <SwiftIcon />,
     title: "Swift Todo",
