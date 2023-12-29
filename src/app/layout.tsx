@@ -1,13 +1,16 @@
 import "@/styles/globals.css";
 import { FC, PropsWithChildren } from "react";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#18181B",
+};
 
 export const metadata: Metadata = {
   title: "Kilian Braquin",
   description:
     "Hello, I'm a full-stack developer that mainly creates websites based on TypeScript, Next.js, React.",
   metadataBase: new URL("https://www.kbraquin.com"),
-  themeColor: "#18181B",
   openGraph: {
     title: "Kilian Braquin",
     description:
@@ -39,7 +42,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
         <link rel="stylesheet" href="https://use.typekit.net/nne1kqe.css" />
       </head>
       <body className="bg-side-bg">
-        <div className="container pt-4 pb-3 md:border-x-container-border border-x bg-main-bg min-h-screen flex flex-col">
+        <div className="container flex min-h-screen flex-col border-x bg-main-bg pb-3 pt-4 md:border-x-container-border">
           {children}
         </div>
       </body>
