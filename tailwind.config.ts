@@ -23,8 +23,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      heading: "ff-uberhand-pro, sans-serif",
-      main: "zeitung-micro, sans-serif",
+      heading: "var(--font-nunito), sans-serif",
+      main: "var(--font-fira-sans), sans-serif",
     },
   },
   plugins: [],

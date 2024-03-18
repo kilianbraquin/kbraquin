@@ -1,6 +1,21 @@
 import "@/styles/globals.css";
 import { FC, PropsWithChildren } from "react";
 import { Metadata, Viewport } from "next";
+import { Fira_Sans, Nunito } from "next/font/google";
+
+const firaSans = Fira_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fira-sans",
+  weight: ["400", "700"],
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-nunito",
+  weight: ["900"],
+});
 
 export const viewport: Viewport = {
   themeColor: "#18181B",
@@ -37,10 +52,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://use.typekit.net/nne1kqe.css" />
-      </head>
+    <html lang="en" className={`${firaSans.variable} ${nunito.variable}`}>
       <body className="bg-side-bg">
         <div className="container flex min-h-screen flex-col border-x bg-main-bg pb-3 pt-4 md:border-x-container-border">
           {children}
