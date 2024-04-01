@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import { FC, PropsWithChildren } from "react";
 import { Metadata, Viewport } from "next";
-import { Fira_Sans, Nunito } from "next/font/google";
+import { Nunito, Ubuntu } from "next/font/google";
 
-const firaSans = Fira_Sans({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-fira-sans",
+  variable: "--font-ubuntu",
   weight: ["400", "700"],
 });
 
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en" className={`${firaSans.variable} ${nunito.variable}`}>
+    <html lang="en" className={`${ubuntu.variable} ${nunito.variable}`}>
       <body className="bg-side-bg">
         <div className="container flex min-h-screen flex-col border-x bg-main-bg pb-3 pt-4 md:border-x-container-border">
           {children}
