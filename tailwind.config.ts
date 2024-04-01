@@ -23,8 +23,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      heading: "var(--font-nunito), sans-serif",
-      main: "var(--font-ubuntu), sans-serif",
+      heading: "var(--font-heading), sans-serif",
+      main: "var(--font-body), sans-serif",
     },
   },
   plugins: [],

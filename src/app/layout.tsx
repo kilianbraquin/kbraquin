@@ -1,20 +1,20 @@
 import "@/styles/globals.css";
 import { FC, PropsWithChildren } from "react";
 import { Metadata, Viewport } from "next";
-import { Nunito, Ubuntu } from "next/font/google";
+import { Playpen_Sans } from "next/font/google";
 
-const ubuntu = Ubuntu({
+const bodyFont = Playpen_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-ubuntu",
-  weight: ["400", "700"],
+  variable: "--font-body",
+  weight: ["400", "600"],
 });
 
-const nunito = Nunito({
+const headingFont = Playpen_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-nunito",
-  weight: ["900"],
+  variable: "--font-heading",
+  weight: ["700"],
 });
 
 export const viewport: Viewport = {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en" className={`${ubuntu.variable} ${nunito.variable}`}>
+    <html lang="en" className={`${bodyFont.variable} ${headingFont.variable}`}>
       <body className="bg-side-bg">
         <div className="container flex min-h-screen flex-col border-x bg-main-bg pb-3 pt-4 md:border-x-container-border">
           {children}

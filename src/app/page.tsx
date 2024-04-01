@@ -12,7 +12,7 @@ const dataProjects: ProjectCardProps[] = [
     title: "Swift Todo",
     description: (
       <>
-        <span className="inline-block py-0.5 px-1 bg-primary/10 text-primary font-bold rounded-md mr-1">
+        <span className="mr-1 inline-block rounded-md bg-primary/10 px-1 py-0.5 font-semibold text-primary">
           Prototype
         </span>
         {
@@ -48,10 +48,10 @@ const dataProjects: ProjectCardProps[] = [
 const HomePage: NextPage = () => {
   return (
     <>
-      <h1 className="font-heading text-heading font-black mb-4 text-4xl leading-none">
+      <h1 className="mb-4 font-heading text-4xl font-black leading-none text-heading">
         Hello, I’m Kilian
       </h1>
-      <p className="text-body [&>a]:text-primary [&>a]:underline [&>a]:font-bold whitespace-pre-line">
+      <p className="whitespace-pre-line text-body [&>a]:font-semibold [&>a]:text-primary [&>a]:underline">
         I{"'"}m a full-stack developer that mainly creates websites based on
         TypeScript, Next.js, React.
         <br />
@@ -68,17 +68,17 @@ const HomePage: NextPage = () => {
         </Link>{" "}
         and <Link href="https://github.com/kilianbraquin">GitHub</Link>.
       </p>
-      <h2 className="font-heading text-heading font-black mt-6 mb-4 text-3xl leading-none">
+      <h2 className="mb-4 mt-6 font-heading text-3xl font-black leading-none text-heading">
         Featured Projects
       </h2>
-      <ul className="mb-4 md:mb-6 gap-3 grid grid-cols-1 md:grid-cols-1">
+      <ul className="mb-4 grid grid-cols-1 gap-3 md:mb-6 md:grid-cols-1">
         {dataProjects.map((cardProps) => (
           <li key={cardProps.title}>
             <ProjectCard {...cardProps} />
           </li>
         ))}
       </ul>
-      <footer className="font-heading text-lg text-body text-center [&>a]:text-primary [&>a:hover]:underline [&>a]:font-bold mt-auto">
+      <footer className="mt-auto text-center font-heading text-lg text-body [&>a:hover]:underline [&>a]:font-bold [&>a]:text-primary">
         © 2023 Kilian Braquin ·{" "}
         <Link href="https://www.linkedin.com/in/kilian-braquin">LinkedIn</Link>{" "}
         · <Link href="https://github.com/kilianbraquin">Github</Link> ·{" "}
