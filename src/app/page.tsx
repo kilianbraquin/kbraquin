@@ -79,7 +79,7 @@ const HomePage: NextPage = () => {
         ))}
       </ul>
       <footer className="mt-auto text-center font-heading text-lg text-body [&>a:hover]:underline [&>a]:font-bold [&>a]:text-primary">
-        © 2023 Kilian Braquin ·{" "}
+        Kilian Braquin ·{" "}
         <Link href="https://www.linkedin.com/in/kilian-braquin">LinkedIn</Link>{" "}
         · <Link href="https://github.com/kilianbraquin">Github</Link> ·{" "}
         <Link href="https://www.kongregate.com/accounts/IndieBaie">
