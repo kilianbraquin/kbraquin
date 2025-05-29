@@ -6,7 +6,7 @@ import { Playpen_Sans } from "next/font/google";
 const bodyFont = Playpen_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-body",
+  variable: "--font-main",
   weight: ["400", "600"],
 });
 
@@ -54,7 +54,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en" className={`${bodyFont.variable} ${headingFont.variable}`}>
       <body className="bg-side-bg">
-        <div className="container flex min-h-screen flex-col border-x bg-main-bg pb-3 pt-4 md:border-x-container-border">
+        <div className="layout-container bg-main-bg md:border-x-container-border flex min-h-screen flex-col border-x pt-4 pb-3">
           {children}
         </div>
       </body>
