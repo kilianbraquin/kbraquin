@@ -12,7 +12,7 @@ const dataProjects: ProjectCardProps[] = [
     title: "Swift Todo",
     description: (
       <>
-        <span className="mr-1 inline-block rounded-md bg-primary/10 px-1 py-0.5 font-semibold text-primary">
+        <span className="bg-primary/10 text-primary mr-1 inline-block rounded-md px-1 py-0.5 font-semibold">
           Prototype
         </span>
         {
@@ -48,10 +48,10 @@ const dataProjects: ProjectCardProps[] = [
 const HomePage: NextPage = () => {
   return (
     <>
-      <h1 className="mb-4 font-heading text-4xl font-black leading-none text-heading">
+      <h1 className="font-heading text-heading mb-4 text-4xl leading-none font-black">
         Hello, I’m Kilian
       </h1>
-      <p className="whitespace-pre-line text-body [&>a]:font-semibold [&>a]:text-primary [&>a]:underline">
+      <p className="text-body [&>a]:text-primary whitespace-pre-line [&>a]:font-semibold [&>a]:underline">
         I{"'"}m a full-stack developer that mainly creates websites based on
         TypeScript, Next.js, React.
         <br />
@@ -68,7 +68,7 @@ const HomePage: NextPage = () => {
         </Link>{" "}
         and <Link href="https://github.com/kilianbraquin">GitHub</Link>.
       </p>
-      <h2 className="mb-4 mt-6 font-heading text-3xl font-black leading-none text-heading">
+      <h2 className="font-heading text-heading mt-6 mb-4 text-3xl leading-none font-black">
         Featured Projects
       </h2>
       <ul className="mb-4 grid grid-cols-1 gap-3 md:mb-6 md:grid-cols-1">
@@ -78,7 +78,7 @@ const HomePage: NextPage = () => {
           </li>
         ))}
       </ul>
-      <footer className="mt-auto text-center font-heading text-lg text-body [&>a:hover]:underline [&>a]:font-bold [&>a]:text-primary">
+      <footer className="font-heading text-body [&>a]:text-primary mt-auto text-center text-lg font-bold [&>a:hover]:underline">
         Kilian Braquin ·{" "}
         <Link href="https://www.linkedin.com/in/kilian-braquin">LinkedIn</Link>{" "}
         · <Link href="https://github.com/kilianbraquin">Github</Link> ·{" "}

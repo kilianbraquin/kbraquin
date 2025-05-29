@@ -1,15 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-*: initial;
+  --color-heading: #cdd6f4;
+  --color-body: #bac2de;
+  --color-primary: #74c7ec;
+  --color-card-bg: #1e1e2e;
+  --color-main-bg: #181825;
+  --color-side-bg: #11111b;
+  --color-card-border: #313244;
+  --color-container-border: #1e1e2e;
+}
+
+@theme inline {
+  --font-heading: var(--font-heading), sans-serif;
+  --font-main: var(--font-main), sans-serif;
+}
 
 @layer base {
   html {
-    font-family: theme("fontFamily.main");
+    font-family: var(--font-main);
   }
 }
 
-@layer utilities {
-  .pb-safe {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
+@utility layout-container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 768px;
+}
+
+@utility pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
 }
