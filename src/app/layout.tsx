@@ -18,7 +18,7 @@ const headingFont = Playpen_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#18181B",
+  themeColor: "#181825",
 };
 
 export const metadata: Metadata = {
