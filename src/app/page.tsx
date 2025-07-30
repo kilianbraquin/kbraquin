@@ -26,7 +26,7 @@ const dataProjects: ProjectCardProps[] = [
     image: <CGIcon />,
     title: "Chicken Godfather",
     description:
-      "An incremental video game where chicken is became forbidden, and you decide to join a cartel to get some.",
+      "An incremental video game where chicken has been banned forbidden, and you decide to join a cartel to get some.",
     href: "https://www.kongregate.com/games/IndieBaie/chicken-godfather",
   },
   {
@@ -40,7 +40,7 @@ const dataProjects: ProjectCardProps[] = [
     image: <ESMIcon />,
     title: "ESManager",
     description:
-      "A tactical video game where you are an e-sport coach that has to train his players and prepare the matches to make your team winning.",
+      "A tactical video game where you are an e-sports coach who trains his players, devises strategies, and prepares for matches to lead his team to victory.",
     href: "https://www.kongregate.com/games/IndieBaie/esmanager",
   },
 ];
