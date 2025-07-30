@@ -1,16 +1,16 @@
 import "@/styles/globals.css";
 import { FC, PropsWithChildren } from "react";
 import { Metadata, Viewport } from "next";
-import { Playpen_Sans } from "next/font/google";
+import { Recursive } from "next/font/google";
 
-const bodyFont = Playpen_Sans({
+const bodyFont = Recursive({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-main",
   weight: ["400", "600"],
 });
 
-const headingFont = Playpen_Sans({
+const headingFont = Recursive({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-heading",
