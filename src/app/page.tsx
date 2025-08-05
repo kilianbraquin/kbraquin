@@ -71,7 +71,7 @@ const HomePage: NextPage = () => {
       <h2 className="font-heading text-heading mt-6 mb-4 text-3xl leading-none font-black">
         Featured Projects
       </h2>
-      <ul className="mb-4 grid grid-cols-1 gap-3 md:mb-6 md:grid-cols-1">
+      <ul className="mb-4 flex flex-col gap-3 md:mb-6">
         {dataProjects.map((cardProps) => (
           <li key={cardProps.title}>
             <ProjectCard {...cardProps} />
