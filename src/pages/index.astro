@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../projects';
+import { GITHUB_URL, KONGREGATE_URL, LINKEDIN_URL } from '../consts';
+---
+
+<Layout>
+  <h1 class="font-heading text-heading mb-4 text-4xl leading-none font-bold">
+    Hello, I’m Kilian
+  </h1>
+  <p class="text-body [&>a]:text-primary [&>a]:font-semibold [&>a]:underline">
+    I'm a full-stack developer who mainly creates websites based on TypeScript
+    and React.<br />During my free time, I like to develop some ideas of
+    websites or video games that I may have and I generally publish them under
+    the name <a href={KONGREGATE_URL}>IndieBaie</a>. In the section below, I
+    list my main released projects.<br />Also you can find me on <a
+      href={LINKEDIN_URL}>LinkedIn</a
+    >
+    and <a href={GITHUB_URL}>GitHub</a>.
+  </p>
+  <h2
+    class="font-heading text-heading mt-6 mb-4 text-3xl leading-none font-bold"
+  >
+    Featured Projects
+  </h2>
+  <ul class="mb-4 flex flex-col gap-3 md:mb-6">
+    {
+      projects.map((project) => (
+        <li>
+          <ProjectCard {...project} />
+        </li>
+      ))
+    }
+  </ul>
+  <footer
+    class="font-heading text-body [&>a]:text-primary mt-auto text-center text-lg font-bold [&>a:hover]:underline"
+  >
+    Kilian Braquin · <a href={LINKEDIN_URL}>LinkedIn</a> · <a href={GITHUB_URL}
+      >Github</a
+    > · <a href={KONGREGATE_URL}>Kongregate</a>
+  </footer>
+</Layout>

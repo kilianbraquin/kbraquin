@@ -1,35 +1,22 @@
 {
-  "name": "kbraquin.com",
+  "name": "kbraquin-astro",
   "private": true,
-  "version": "2.0.0",
-  "license": "MIT",
+  "type": "module",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "preview": "serve out",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "next": "^15.4.5",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.9",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "eslint": "^9.32.0",
-    "eslint-config-next": "15.4.5",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.14",
-    "serve": "^14.2.4",
-    "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3"
-  },
-  "engines": {
-    "node": ">=24.4.1",
-    "pnpm": ">=10.13.1"
+    "prettier": "3.6.2",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "0.6.14"
   }
 }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="384px" viewBox="0 0 384 384" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0 92 5.68434189e-14 276 160 368 320 276 320 92 160 -2.2470914e-13"></polygon>
+    </defs>
+    <g id="New-Logo-Favicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(32, 8)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Container" stroke="#06202C" stroke-width="4" xlink:href="#path-1"></use>
+            <g id="Triangles" mask="url(#mask-2)">
+                <g transform="translate(0, -0)">
+                    <path d="M80,322 L79.999,321.999 L1.34463556e-15,276 L80,230 L160,276 L80,321.999 Z" id="Combined-Shape" fill="#74C7EC"></path>
+                    <path d="M80,230 L79.999,229.999 L1.34463556e-15,184 L80,138 L160,184 L80,229.999 Z" id="Combined-Shape" fill="#B9E2F6"></path>
+                    <path d="M80,138 L79.999,137.999 L1.34463556e-15,92 L80,46 L160,92 L80,137.999 Z" id="Combined-Shape" fill="#F5FBFE"></path>
+                    <path d="M160,184 L159.999,183.999 L80,138 L160,92 L240,138 L160,183.999 Z" id="Combined-Shape" fill="#F5FBFE"></path>
+                    <path d="M160,276 L159.999,275.999 L80,230 L160,184 L240,230 L160,275.999 Z" id="Combined-Shape" fill="#74C7EC"></path>
+                    <path d="M160,368 L159.999,367.999 L80,322 L160,276 L240,322 L160,367.999 Z" id="Combined-Shape" fill="#74C7EC"></path>
+                    <path d="M240,322 L239.999,321.999 L160,276 L240,230 L320,276 L240,321.999 Z" id="Combined-Shape" fill="#74C7EC"></path>
+                    <path d="M240,230 L239.999,229.999 L160,184 L240,138 L320,184 L240,229.999 Z" id="Combined-Shape" fill="#B9E2F6"></path>
+                    <path d="M240,138 L239.999,137.999 L160,92 L240,46 L320,92 L240,137.999 Z" id="Combined-Shape" fill="#F5FBFE"></path>
+                    <path d="M160,92 L159.999,91.999 L80,46 L160,-7.34788079e-15 L240,46 L160,91.999 Z" id="Combined-Shape" fill="#F5FBFE"></path>
+                    <polygon id="Triangle" fill="#A6DAF3" transform="translate(40, 230) rotate(-270) translate(-40, -230)" points="40 190 86 270 -6 270"></polygon>
+                    <polygon id="Triangle" fill="#CDEBF8" transform="translate(40, 138) rotate(-270) translate(-40, -138)" points="40 98 86 178 -6 178"></polygon>
+                    <polygon id="Triangle" fill="#A6DAF3" transform="translate(280, 230) scale(-1, 1) rotate(-270) translate(-280, -230)" points="280 190 326 270 234 270"></polygon>
+                    <polygon id="Triangle" fill="#CDEBF8" transform="translate(280, 138) scale(-1, 1) rotate(-270) translate(-280, -138)" points="280 98 326 178 234 178"></polygon>
+                </g>
+            </g>
+            <g id="Lines" mask="url(#mask-2)" stroke="#06202C" stroke-width="2">
+                <g transform="translate(0, 46)">
+                    <line x1="2.68673972e-14" y1="138" x2="242" y2="6.37979253e-14" id="Path-2"></line>
+                    <line x1="78" y1="6.37979253e-14" x2="320" y2="138" id="Path-3"></line>
+                    <line x1="320" y1="138" x2="79" y2="276" id="Path-4"></line>
+                    <line x1="2.68673972e-14" y1="138" x2="242" y2="276" id="Path-5"></line>
+                    <line x1="0" y1="230" x2="320" y2="46" id="Path-6"></line>
+                    <line x1="0" y1="46" x2="320" y2="230" id="Path-7"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

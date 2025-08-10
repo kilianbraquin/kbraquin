@@ -1,0 +1,38 @@
+---
+import type { ProjectIconComponent } from '../projects';
+
+interface Props {
+  iconComponent: ProjectIconComponent;
+  title: string;
+  description: string;
+  href: string;
+  prefix?: string;
+}
+
+const { iconComponent: Icon, title, description, href, prefix } = Astro.props;
+---
+
+<a
+  href={href}
+  class="border-card-border bg-card-bg grid grid-cols-[auto_1fr] gap-4 rounded-lg border p-4 shadow-lg sm:gap-x-5 sm:gap-y-2 sm:py-3"
+>
+  <div
+    class="sm:border-r-card-border flex w-[84px] justify-center sm:row-span-2 sm:self-center"
+  >
+    <Icon />
+  </div>
+  <h3
+    class="text-heading font-heading self-center text-xl leading-none font-black"
+  >
+    {title}
+  </h3>
+  <p class="text-body col-span-2 sm:col-span-1">
+    {
+      prefix && (
+        <span class="bg-primary/10 text-primary mr-1 inline-block rounded-md px-1 py-0.5 font-semibold">
+          {prefix}
+        </span>
+      )
+    }{description}
+  </p>
+</a>
