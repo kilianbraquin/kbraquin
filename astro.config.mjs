@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -7,7 +7,21 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: process.env.BASE_URL,
   trailingSlash: 'never',
+  build: {
+    inlineStylesheets: 'always',
+  },
   vite: {
     plugins: [tailwindcss()],
+  },
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: 'Recursive',
+        cssVariable: '--font-recursive',
+        display: 'swap',
+        weights: [400, 700],
+      },
+    ],
   },
 });

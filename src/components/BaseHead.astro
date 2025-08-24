@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import logo from '../assets/logo.png';
+import { Font } from 'astro:assets';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 interface Props {
@@ -22,18 +23,12 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 <meta name="description" content={description} />
 <meta name="theme-color" content="#181825" />
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Recursive:wght@400..700&display=swap"
-  rel="stylesheet"
-/>
-
-<meta property="og:title" content="Kilian Braquin" />
-<meta property="og:description" content={description} />
+<!-- Fonts -->
+<Font cssVariable="--font-recursive" preload />
 
 <!-- Open Graph / Facebook -->
+<meta property="og:title" content="Kilian Braquin" />
+<meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:url" content={Astro.url} />
