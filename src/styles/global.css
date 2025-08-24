@@ -13,13 +13,13 @@
 }
 
 @theme inline {
-  --font-heading: var(--font-recursive), sans-serif;
-  --font-main: var(--font-recursive), sans-serif;
+  --font-heading: var(--font-recursive);
+  --font-main: var(--font-recursive);
 }
 
 @layer base {
   html {
-    font-family: var(--font-main), sans-serif;
+    font-family: var(--font-main);
   }
 }
 

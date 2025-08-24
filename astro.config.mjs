@@ -20,6 +20,8 @@ export default defineConfig({
         name: 'Recursive',
         cssVariable: '--font-recursive',
         display: 'swap',
+        fallbacks: ['sans-serif'],
+        optimizedFallbacks: false,
         weights: [400, 700],
       },
     ],
