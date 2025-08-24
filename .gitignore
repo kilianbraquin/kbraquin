@@ -14,5 +14,5 @@ node_modules/
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
-.idea/
+# zed setting folder
+.zed/
