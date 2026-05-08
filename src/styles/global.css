@@ -2,14 +2,14 @@
 
 @theme {
   --color-*: initial;
-  --color-heading: #cdd6f4;
-  --color-body: #bac2de;
-  --color-primary: #74c7ec;
-  --color-card-bg: #1e1e2e;
-  --color-main-bg: #181825;
-  --color-side-bg: #11111b;
-  --color-card-border: #313244;
-  --color-container-border: #1e1e2e;
+  --color-heading: #f7f1ff;
+  --color-body: #bab6c0;
+  --color-primary: #fd9353;
+  --color-side-bg: #121212;
+  --color-main-bg: #1c1c1c;
+  --color-card-bg: #222222;
+  --color-card-border: #363537;
+  --color-container-border: #1c1c1c;
 }
 
 @theme inline {
