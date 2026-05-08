@@ -1,12 +1,15 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
-  title?: string;
+  className?: string;
   description?: string;
+  hideFooter?: boolean;
+  title?: string;
 }
 
-const { title, description } = Astro.props;
+const { className, description, hideFooter, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,7 +21,10 @@ const { title, description } = Astro.props;
     <div
       class="layout-container bg-main-bg md:border-x-container-border flex min-h-screen flex-col border-x pt-4 pb-3"
     >
-      <slot />
+      <main class={className}>
+        <slot />
+      </main>
+      {!hideFooter && <Footer />}
     </div>
   </body>
 </html>
