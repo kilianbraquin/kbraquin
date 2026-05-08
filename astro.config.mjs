@@ -13,17 +13,15 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: 'Recursive',
-        cssVariable: '--font-recursive',
-        display: 'swap',
-        fallbacks: ['sans-serif'],
-        optimizedFallbacks: false,
-        weights: [400, 700],
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: 'Recursive',
+      cssVariable: '--font-recursive',
+      display: 'swap',
+      fallbacks: ['sans-serif'],
+      optimizedFallbacks: false,
+      weights: [400, 700],
+    },
+  ],
 });
