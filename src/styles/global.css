@@ -6,10 +6,10 @@
   --color-body: #bab6c0;
   --color-primary: #fd9353;
   --color-side-bg: #121212;
-  --color-main-bg: #1c1c1c;
+  --color-container-bg: #1c1c1c;
+  --color-container-border: #363537;
   --color-card-bg: #222222;
   --color-card-border: #363537;
-  --color-container-border: #1c1c1c;
 }
 
 @theme inline {

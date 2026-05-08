@@ -17,9 +17,9 @@ const { className, description, hideFooter, title } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body class="bg-main-bg md:bg-side-bg">
+  <body class="bg-container-bg md:bg-side-bg">
     <div
-      class="layout-container bg-main-bg md:border-x-container-border flex min-h-screen flex-col border-x pt-4 pb-3"
+      class="layout-container bg-container-bg md:border-x-container-border flex min-h-screen flex-col border-x pt-4 pb-3"
     >
       <main class={className}>
         <slot />
