@@ -1,9 +1,17 @@
 import CGIcon from './assets/cg-icon.svg';
-import MTIcon from './assets/mt-icon.svg';
 import ESMIcon from './assets/esm-icon.svg';
+import MTIcon from './assets/mt-icon.svg';
+import NapolisIcon from './assets/napolis.svg';
 import SwiftIcon from './assets/swift-icon.svg';
 
 export const projects = [
+  {
+    iconComponent: NapolisIcon,
+    title: "Napoli's Pizza",
+    description:
+      'A static website based on Astro that showcases a French pizzeria owned by a friend.',
+    href: 'https://napolis.fr',
+  },
   {
     iconComponent: SwiftIcon,
     title: 'Swift Todo',
