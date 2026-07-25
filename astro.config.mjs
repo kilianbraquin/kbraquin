@@ -1,26 +1,21 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
 
-import tailwindcss from '@tailwindcss/vite';
-
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.BASE_URL,
-  trailingSlash: 'never',
-  build: {
-    inlineStylesheets: 'always',
-  },
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  fonts: [
-    {
-      provider: fontProviders.google(),
-      name: 'Recursive',
-      cssVariable: '--font-recursive',
-      display: 'swap',
-      optimizedFallbacks: true,
-      weights: [400, 700],
-    },
-  ],
+	site: 'https://www.kbraquin.com',
+	build: {
+		inlineStylesheets: 'always',
+	},
+	fonts: [
+		{
+			name: 'Lexend',
+			cssVariable: '--font-lexend',
+			provider: fontProviders.google(),
+			weights: ['400 700'],
+			styles: ['normal'],
+			subsets: ['latin'],
+			fallbacks: ['system-ui', 'sans-serif'],
+		},
+	],
 });

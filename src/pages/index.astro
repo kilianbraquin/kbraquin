@@ -1,35 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Intro from '../components/Intro.astro';
+import ProjectSection from '../components/ProjectSection.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-import { projects } from '../projects';
-import { GITHUB_URL, KONGREGATE_URL, LINKEDIN_URL } from '../consts';
+import styles from './index.module.css';
+import napolisIcon from '../assets/napolis.svg';
+import swiftTodoIcon from '../assets/swift-todo.svg';
+import kongregateIcon from '../assets/kongregate.svg';
 ---
 
-<Layout>
-  <h1 class="font-heading text-heading mb-4 text-4xl leading-none font-bold">
-    Hello, I’m Kilian
-  </h1>
-  <p class="text-body [&>a]:text-primary [&>a]:font-bold [&>a]:underline">
-    Hello, I'm a front-end developer who mainly creates websites based on React
-    with TypeScript.<br />During my free time, I like to develop some ideas of
-    websites or video games that I may have and I generally publish them under
-    the name <a href={KONGREGATE_URL}>IndieBaie</a>. In the section below, I
-    list my main released projects.<br />Also you can find me on <a
-      href={LINKEDIN_URL}>LinkedIn</a
-    > and <a href={GITHUB_URL}>GitHub</a>.
-  </p>
-  <h2
-    class="font-heading text-heading mt-6 mb-4 text-3xl leading-none font-bold"
-  >
-    Featured Projects
-  </h2>
-  <ul class="mb-4 flex flex-col gap-3 md:mb-6">
-    {
-      projects.map((project) => (
-        <li>
-          <ProjectCard {...project} />
-        </li>
-      ))
-    }
-  </ul>
+<Layout
+	title="Kilian Braquin"
+	description="I'm a software engineer specializing in building web applications. I share my finished side projects here."
+>
+	<div class={styles.container}>
+		<Intro />
+		<main class={styles.main}>
+			<ProjectSection title="Websites & Apps">
+				<ProjectCard
+					href="https://napolis.fr"
+					icon={napolisIcon}
+					domain="napolis.fr"
+					title="Napoli's Pizza"
+					tags={[{ label: 'Astro', url: 'https://astro.build/' }]}
+					date="July 2026"
+				>
+					A static site showcasing a French pizzeria owned by a friend.
+				</ProjectCard>
+				<ProjectCard
+					href="https://swift.kbraquin.com"
+					icon={swiftTodoIcon}
+					domain="swift.kbraquin.com"
+					badge="Demo"
+					title="Swift Todo"
+					tags={[
+						{ label: 'React', url: 'https://react.dev/' },
+						{ label: 'Motion', url: 'https://motion.dev/' },
+					]}
+					date="June 2023"
+				>
+					A web app that lets you manage a simple to-do list.
+				</ProjectCard>
+			</ProjectSection>
+			<ProjectSection title="Web Games">
+				<ProjectCard
+					href="https://www.kongregate.com/games/IndieBaie/chicken-godfather"
+					icon={kongregateIcon}
+					domain="kongregate.com"
+					title="Chicken Godfather"
+					tags={[
+						{ label: 'Haxe', url: 'https://haxe.org/' },
+						{ label: 'HaxeFlixel', url: 'https://haxeflixel.com/' },
+					]}
+					date="June 2018"
+				>
+					An incremental video game in which chicken has been forbidden, and you decide to join a
+					cartel to get some.
+				</ProjectCard>
+				<ProjectCard
+					href="https://www.kongregate.com/games/IndieBaie/monster-tycoon"
+					icon={kongregateIcon}
+					domain="kongregate.com"
+					title="Monster Tycoon"
+					tags={[{ label: 'Godot Engine', url: 'https://godotengine.org/' }]}
+					date="July 2018"
+				>
+					A turn-based battle game in which you build the best monster team to win the championship.
+				</ProjectCard>
+				<ProjectCard
+					href="https://www.kongregate.com/games/IndieBaie/esmanager"
+					icon={kongregateIcon}
+					domain="kongregate.com"
+					title="ESManager"
+					tags={[{ label: 'GameMaker', url: 'https://gamemaker.io/' }]}
+					date="May 2020"
+				>
+					A tactical video game in which you coach an esports team, train your players, devise
+					strategies, and prepare for matches to lead them to victory.
+				</ProjectCard>
+			</ProjectSection>
+		</main>
+	</div>
 </Layout>

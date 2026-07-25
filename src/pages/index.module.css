@@ -1,0 +1,20 @@
+.container {
+	background: #18181b;
+	margin: 0 auto;
+	min-height: 100vh;
+	max-width: var(--page-width);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	gap: 24px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		border-left: 1px solid #27272a;
+		border-right: 1px solid #27272a;
+	}
+}
