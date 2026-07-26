@@ -5,27 +5,34 @@ import styles from './Intro.module.css';
 ---
 
 <header class={styles.header}>
-	<div class={styles.top}>
-		<div>
-			<h1 class={styles.name}>Kilian Braquin</h1>
-			<p class={styles.role}>Software Engineer at Molotov TV</p>
+	<div class="container">
+		<div class={styles.top}>
+			<div>
+				<h1 class={styles.name}>Kilian Braquin</h1>
+				<p class={styles.role}>Software Engineer at Molotov TV</p>
+			</div>
+			<div class={styles.links}>
+				<a
+					href="https://www.linkedin.com/in/kilian-braquin"
+					class={styles.link}
+					target="_blank"
+					rel="noopener"
+				>
+					<LinkedInIcon aria-hidden="true" />LinkedIn
+				</a>
+				<a
+					href="https://github.com/kilianbraquin"
+					class={styles.link}
+					target="_blank"
+					rel="noopener"
+				>
+					<GitHubIcon aria-hidden="true" />GitHub
+				</a>
+			</div>
 		</div>
-		<div class={styles.links}>
-			<a
-				href="https://www.linkedin.com/in/kilian-braquin"
-				class={styles.link}
-				target="_blank"
-				rel="noopener"
-			>
-				<LinkedInIcon aria-hidden="true" />LinkedIn
-			</a>
-			<a href="https://github.com/kilianbraquin" class={styles.link} target="_blank" rel="noopener">
-				<GitHubIcon aria-hidden="true" />GitHub
-			</a>
-		</div>
+		<p class={styles.intro}>
+			I'm a software engineer specializing in building web applications. I share my finished side
+			projects here.
+		</p>
 	</div>
-	<p class={styles.intro}>
-		I'm a software engineer specializing in building web applications. I share my finished side
-		projects here.
-	</p>
 </header>

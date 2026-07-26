@@ -13,72 +13,70 @@ import kongregateIcon from '../assets/kongregate.svg';
 	title="Kilian Braquin"
 	description="I'm a software engineer specializing in building web applications. I share my finished side projects here."
 >
-	<div class={styles.container}>
-		<Intro />
-		<main class={styles.main}>
-			<ProjectSection title="Websites & Apps">
-				<ProjectCard
-					href="https://napolis.fr"
-					icon={napolisIcon}
-					domain="napolis.fr"
-					title="Napoli's Pizza"
-					tags={[{ label: 'Astro', url: 'https://astro.build/' }]}
-					date="July 2026"
-				>
-					A static site showcasing a French pizzeria owned by a friend.
-				</ProjectCard>
-				<ProjectCard
-					href="https://swift.kbraquin.com"
-					icon={swiftTodoIcon}
-					domain="swift.kbraquin.com"
-					badge="Demo"
-					title="Swift Todo"
-					tags={[
-						{ label: 'React', url: 'https://react.dev/' },
-						{ label: 'Motion', url: 'https://motion.dev/' },
-					]}
-					date="June 2023"
-				>
-					A web app that lets you manage a simple to-do list.
-				</ProjectCard>
-			</ProjectSection>
-			<ProjectSection title="Web Games">
-				<ProjectCard
-					href="https://www.kongregate.com/games/IndieBaie/chicken-godfather"
-					icon={kongregateIcon}
-					domain="kongregate.com"
-					title="Chicken Godfather"
-					tags={[
-						{ label: 'Haxe', url: 'https://haxe.org/' },
-						{ label: 'HaxeFlixel', url: 'https://haxeflixel.com/' },
-					]}
-					date="June 2018"
-				>
-					An incremental video game in which chicken has been forbidden, and you decide to join a
-					cartel to get some.
-				</ProjectCard>
-				<ProjectCard
-					href="https://www.kongregate.com/games/IndieBaie/monster-tycoon"
-					icon={kongregateIcon}
-					domain="kongregate.com"
-					title="Monster Tycoon"
-					tags={[{ label: 'Godot Engine', url: 'https://godotengine.org/' }]}
-					date="July 2018"
-				>
-					A turn-based battle game in which you build the best monster team to win the championship.
-				</ProjectCard>
-				<ProjectCard
-					href="https://www.kongregate.com/games/IndieBaie/esmanager"
-					icon={kongregateIcon}
-					domain="kongregate.com"
-					title="ESManager"
-					tags={[{ label: 'GameMaker', url: 'https://gamemaker.io/' }]}
-					date="May 2020"
-				>
-					A tactical video game in which you coach an esports team, train your players, devise
-					strategies, and prepare for matches to lead them to victory.
-				</ProjectCard>
-			</ProjectSection>
-		</main>
-	</div>
+	<Intro />
+	<main class:list={['container', styles.main]}>
+		<ProjectSection title="Websites & Apps">
+			<ProjectCard
+				href="https://napolis.fr"
+				icon={napolisIcon}
+				domain="napolis.fr"
+				title="Napoli's Pizza"
+				tags={[{ label: 'Astro', url: 'https://astro.build/' }]}
+				date="July 2026"
+			>
+				A static site showcasing a French pizzeria owned by a friend.
+			</ProjectCard>
+			<ProjectCard
+				href="https://swift.kbraquin.com"
+				icon={swiftTodoIcon}
+				domain="swift.kbraquin.com"
+				badge="Demo"
+				title="Swift Todo"
+				tags={[
+					{ label: 'React', url: 'https://react.dev/' },
+					{ label: 'Motion', url: 'https://motion.dev/' },
+				]}
+				date="June 2023"
+			>
+				A web app that lets you manage a simple to-do list.
+			</ProjectCard>
+		</ProjectSection>
+		<ProjectSection title="Web Games">
+			<ProjectCard
+				href="https://www.kongregate.com/games/IndieBaie/chicken-godfather"
+				icon={kongregateIcon}
+				domain="kongregate.com"
+				title="Chicken Godfather"
+				tags={[
+					{ label: 'Haxe', url: 'https://haxe.org/' },
+					{ label: 'HaxeFlixel', url: 'https://haxeflixel.com/' },
+				]}
+				date="June 2018"
+			>
+				An incremental video game in which chicken has been forbidden, and you decide to join a
+				cartel to get some.
+			</ProjectCard>
+			<ProjectCard
+				href="https://www.kongregate.com/games/IndieBaie/monster-tycoon"
+				icon={kongregateIcon}
+				domain="kongregate.com"
+				title="Monster Tycoon"
+				tags={[{ label: 'Godot Engine', url: 'https://godotengine.org/' }]}
+				date="July 2018"
+			>
+				A turn-based battle game in which you build the best monster team to win the championship.
+			</ProjectCard>
+			<ProjectCard
+				href="https://www.kongregate.com/games/IndieBaie/esmanager"
+				icon={kongregateIcon}
+				domain="kongregate.com"
+				title="ESManager"
+				tags={[{ label: 'GameMaker', url: 'https://gamemaker.io/' }]}
+				date="May 2020"
+			>
+				A tactical video game in which you coach an esports team, train your players, devise
+				strategies, and prepare for matches to lead them to victory.
+			</ProjectCard>
+		</ProjectSection>
+	</main>
 </Layout>
